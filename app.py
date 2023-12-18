@@ -167,4 +167,4 @@ def predict_image(img):
 
 if __name__ == '__main__':
     setup_database()  # Ensure the database is set up when the app starts
-    app.run(port=8888, debug=True)
+    app.run(host='0.0.0.0', port=8888, debug=False)
