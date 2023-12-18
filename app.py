@@ -121,7 +121,7 @@ def delete_student(student_id):
 
 @app.route('/analyzeImage', methods=['POST'])
 def analyzeImage():
-    img = image.load_img('lun.jpeg', target_size=(224, 224))
+    img = image.load_img('lung.jpeg', target_size=(224, 224))
     result = predict_image(img)
     print(result)
     json_result = {
